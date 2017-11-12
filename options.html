@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>copy options</title>
+    <style>
+        .item {
+        }
+        .name {
+            width:90px;
+        }
+        .inputarea {
+        }
+        .text-parent {
+        }
+        .text {
+            width:700px;
+            box-sizing: border-box;
+        }
+        .remove {
+        }
+        body {
+            font-size: 15px;
+        }
+        input {
+            font-family: monospace;
+            font-size: 15px;
+        }
+        button {
+            font-size: 15px;
+        }
+        .controlbox {
+            overflow: hidden;
+        }
+        .control {
+            float: left;
+            width: 70px;
+            margin: 4px;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>copy options</h1>
+    <hr>
+    <div class="controlbox">
+        <button class="control" id="append">append</button>
+        <button class="control" id="save">save</button>
+        <button class="control" id="reset">reset</button>
+        <div id="message"></div>
+    </div>
+    <hr>
+    <p>
+    Available variables: <pre>${title}, ${url}, ${date}, ${year}, \n, \t</pre>
+    </p>
+    <hr>
+    <script src="config.js"></script>
+    <script src="options.js"></script>
+    <div id="target"></div>
+</body>
+</html>
+

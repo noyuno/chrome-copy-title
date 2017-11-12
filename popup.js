@@ -31,11 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 var copy = function (k) {
-    chrome.storage.sync.get({
-        formats:{
-            "title":"${title}"
-        }
-    }, function (options) {
+    chrome.storage.sync.get(config.defaultvalue, function (options) {
         var obj = document.getElementById('text');
         obj.style.display="inline";
         var now = new Date()

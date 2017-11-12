@@ -3,6 +3,10 @@
 var load = function () {
     chrome.storage.sync.get("formats", function (options) {
         document.getElementById("target").innerHTML="";
+        if (options.formats == null) {
+            reset();
+            return;
+        }
         for (var k in options.formats) {
             append(k, options.formats[k]);
         }

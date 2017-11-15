@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var tab = tabs[0];
         chrome.storage.sync.get(config.defaultvalue, function (options) {
             title=tab.title;
-            url=tab.title;
+            url=tab.url;
             for (var k in options.formats) {
                 (function () {
                     var key = k;
